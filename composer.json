@@ -1,6 +1,6 @@
 {
     "name": "alva/csv-each",
-    "description": "",
+    "description": "Line by line read csv file",
     "type": "library",
     "homepage": "https://klepov.info",
     "authors": [
