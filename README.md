@@ -1,6 +1,8 @@
 CSV Each
 =========
-
+[![Version](https://img.shields.io/packagist/v/alva/csv-each.svg)](https://packagist.org/packages/alva/csv-each)
+[![License](https://img.shields.io/packagist/l/alva/csv-each.svg)](https://github.com/evgeny-klyopov/csv-each/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/packagist/dt/alva/csv-each.svg)](https://packagist.org/packages/alva/csv-each)
 ### Features:
 - PHP >=7.1
 - **stable**
