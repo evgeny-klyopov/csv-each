@@ -46,7 +46,7 @@ foreach ((new Iterate($pathToFile))->setDelimiter(',')->each(Iterate::TYPE_ARRAY
 ```php
 use Alva\CsvEach\Iterate;
 
-foreach ((new Iterate($pathToFile))->each(Iterate::TYPE_BINARY) as $lineNumber => $line) {
+foreach ((new Iterate($pathToFile))->each(Iterate::TYPE_BINARY, 5) as $lineNumber => $line) {
     echo '[' . $lineNumber . '] ' . $line . PHP_EOL;
 }
 ```
