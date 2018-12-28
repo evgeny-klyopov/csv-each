@@ -2,7 +2,7 @@
 /**
  * User: ス
  * Date: 20.12.2018
- * Time: 19:13
+ * Time: 19:13.
  */
 
 namespace Alva\CsvEach;
@@ -17,8 +17,8 @@ class Iterate
     private $delimiter;
 
     public const TYPE_BINARY = 'Binary';
-    public const TYPE_TEXT   = 'Text';
-    public const TYPE_ARRAY  = 'Array';
+    public const TYPE_TEXT = 'Text';
+    public const TYPE_ARRAY = 'Array';
 
     /**
      * Iterate constructor.
