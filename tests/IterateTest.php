@@ -2,9 +2,8 @@
 /**
  * User: ス
  * Date: 24.12.2018
- * Time: 0:53
+ * Time: 0:53.
  */
-
 use Alva\CsvEach\Iterate;
 use PHPUnit\Framework\TestCase;
 
@@ -12,11 +11,11 @@ class IterateTest extends TestCase
 {
     private $path;
     private $columns = 3;
-    private $rows    = 21;
+    private $rows = 21;
 
     protected function setUp()
     {
-        $this->path = __DIR__ . '/data/example.csv';
+        $this->path = __DIR__.'/data/example.csv';
     }
 
     public function testIterateText()
@@ -44,10 +43,10 @@ class IterateTest extends TestCase
 
     public function testIterateArrayBinary()
     {
-        $this->path = __DIR__ . '/data/example-bytes.csv';
-        $rows       = 0;
-        $size       = 0;
-        $bytes      = 5;
+        $this->path = __DIR__.'/data/example-bytes.csv';
+        $rows = 0;
+        $size = 0;
+        $bytes = 5;
 
         try {
             foreach ((new Iterate($this->path))->each(Iterate::TYPE_BINARY, $bytes) as $lineNumber => $line) {
@@ -68,15 +67,16 @@ class IterateTest extends TestCase
      */
     public function testIterateChangeDelimiter()
     {
-        $this->path = __DIR__ . '/data/example-delimiter.csv';
+        $this->path = __DIR__.'/data/example-delimiter.csv';
 
         $this->iterateArray((new Iterate($this->path))->setDelimiter(';')->each(Iterate::TYPE_ARRAY));
     }
 
     private function iterateArray(\NoRewindIterator $each)
     {
-        $rows    = 0;
+        $rows = 0;
         $columns = 0;
+
         try {
             foreach ($each as $lineNumber => $line) {
                 $columns += \count($line);
@@ -84,7 +84,7 @@ class IterateTest extends TestCase
             }
             $columns /= $rows;
         } catch (Exception $e) {
-            $rows    = 0;
+            $rows = 0;
             $columns = 0;
         }
 
